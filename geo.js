@@ -5,7 +5,7 @@ function initMap() {
         this.uluru = {lat: position.coords.latitude, lng: position.coords.longitude};
     
         this.map = new google.maps.Map(
-        document.getElementById('map'), {zoom: 14, center: this.uluru});
+        document.getElementById('map'), {zoom: 17, center: this.uluru});
     
         this.marker = new google.maps.Marker({position: this.uluru, map: this.map});
     });
