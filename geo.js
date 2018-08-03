@@ -12,8 +12,8 @@ function initMap() {
     // The location of Uluru  
 
     var options = {
-        enableHighAccuracy: true,
-        timeout: 5000,
+        enableHighAccuracy: false,
+        timeout: 0,
         maximumAge: 0
       };
     
