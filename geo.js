@@ -22,9 +22,8 @@ function initMap() {
     function success(pos) {
         document.getElementById("currentPosition-lat").innerHTML = pos.coords.latitude;
         document.getElementById("currentPosition-lon").innerHTML = pos.coords.longitude;
-        this.marker = null;
         this.uluru = {lat: pos.coords.latitude, lng: pos.coords.longitude};
-        this.marker = new google.maps.Marker({position: this.uluru, map: this.map});
+        this.marker.setPosition(this.uluru);
     }
 
     function error(err) {
